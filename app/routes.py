@@ -1,9 +1,10 @@
 from app import app
+from flask import render_template
 
-@app.route('/')
+@app.route('/80s')
 def hello_world():
-    return 'Hello World!'
+    return render_template('80s_songs.html')
 
-@app.route('/test')
+@app.route('/sneakers')
 def hello_test():
-    return 'This is a test!!'
+    return render_template('sneakers.html')
